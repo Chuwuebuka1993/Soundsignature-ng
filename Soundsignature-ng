@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUNDSIGNATURE NG | AI Music Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --accent: #FF5F15;
+            --success: #4CAF50;
+            --dark: #121212;
+            --light: #F8F9FA;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--dark), #1a1a2e);
+            color: var(--light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary), #1a252f);
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        
+        .feature-card {
+            background: rgba(30, 30, 46, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 2px solid var(--primary);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-industrial {
+            background: linear-gradient(135deg, var(--accent), #FF4500);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: var(--light);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">SOUNDSIGNATURE NG</h1>
+            <p class="lead">The Ultimate AI Music Creation Platform</p>
+            <p>Crafted Loud. Built to Last.</p>
+            <button class="btn-industrial btn-lg" onclick="startCreating()">
+                <i class="fas fa-play"></i> Start Creating Music
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-brain fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>AI Music Generation</h4>
+                    <p>Create unique music with AI trained on your style</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-globe fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>Global Distribution</h4>
+                    <p>One-click publishing to all major platforms</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-chart-line fa-3x mb-3" style="color: var(--accent);"></i>
+                    <h4>Revenue Tracking</h4>
+                    <p>Monitor streams and royalties in real-time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Music Generator -->
+    <section class="container py-5">
+        <div class="feature-card">
+            <h3><i class="fas fa-robot"></i> AI Music Generator</h3>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <label>Genre</label>
+                    <select class="form-control">
+                        <option>Afrobeats</option>
+                        <option>Amapiano</option>
+                        <option>Highlife</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label>Mood</label>
+                    <select class="form-control">
+                        <option>Energetic</option><option>Chill</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label>Duration</label>
+                    <select class="form-control">
+                        <option>3:00</option><option>3:30</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn-industrial mt-4" onclick="generateMusic()">
+                Generate Music
+            </button>
+        </div>
+    </section>
+
+    <!-- Distribution Section -->
+    <section class="container py-5">
+        <div class="feature-card">
+            <h3><i class="fas fa-satellite"></i> Distribution Network</h3>
+            <div class="row mt-4">
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-spotify fa-2x" style="color: #1DB954;"></i>
+                    <p>Spotify</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-apple fa-2x" style="color: #A2AAAD;"></i>
+                    <p>Apple Music</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-youtube fa-2x" style="color: #FF0000;"></i>
+                    <p>YouTube</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-tiktok fa-2x" style="color: #00F2EA;"></i>
+                    <p>TikTok</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>SOUNDSIGNATURE NG © 2024 | Crafted Loud. Built to Last.</p>
+    </footer>
+
+    <script>
+        function startCreating() {
+            alert("Welcome to SOUNDSIGNATURE NG! Let's create legendary music together!");
+        }
+        
+        function generateMusic() {
+            alert("AI is generating your unique track... This may take a few moments.");
+            
+            // Simulate AI processing
+            setTimeout(() => {
+                alert("Your track is ready! Ready for distribution to all platforms.");
+            }, 3000);
+        }
+        
+        // Founder recognition
+        const founderEmail = "madubuikechukwuebuka01@gmail.com";
+        if (confirm("Are you the founder? Enter your email for special access:")) {
+            const email = prompt("Enter your founder email:");
+            if (email === founderEmail) {
+                alert("Welcome Founder! Full access granted. All features unlocked.");
+                document.body.style.border = "5px solid gold";
+            }
+        }
+    </script>
+</body>
+</html>
